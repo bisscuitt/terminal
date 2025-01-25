@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
+<title>█tekuiti$ > console</title>
+</head>
+
+<body>
+
+<template id="greetings">
+                 uuuuuuu
+             uu$$$$$$$$$$$uu
+          uu$$$$$$$$$$$$$$$$$uu
+         u$$$$$$$$$$$$$$$$$$$$$u
+        u$$$$$$$$$$$$$$$$$$$$$$$u
+       u$$$$$$$$$$$$$$$$$$$$$$$$$u
+       u$$$$$$$$$$$$$$$$$$$$$$$$$u
+       u$$$$$$"   "$$$"   "$$$$$$u
+       "$$$$"      u$u       $$$$"
+        $$$u       u$u       u$$$
+        $$$u      u$$$u      u$$$
+         "$$$$uu$$$   $$$uu$$$$"
+          "$$$$$$$"   "$$$$$$$"
+            u$$$$$$$u$$$$$$$u
+             u$"$"$"$"$"$"$u
+  uuu        $$u$ $ $ $ $u$$       uuu
+ u$$$$        $$$$$u$u$u$$$       u$$$$
+  $$$$$uu      "$$$$$$$$$"     uu$$$$$$
+u$$$$$$$$$$$uu    """""    uuuu$$$$$$$$$$
+$$$$"""$$$$$$$$$$uuu   uu$$$$$$$$$"""$$$"
+ """      ""$$$$$$$$$$$uu ""$"""
+           uuuu ""$$$$$$$$$$uuu
+  u$$$uuu$$$$$$$$$uu ""$$$$$$$$$$$uuu$$$
+  $$$$$$$$$$""""           ""$$$$$$$$$$$"
+   "$$$$$"                      ""$$$$""
+     $$$"                         $$$$"
+
+[[;green;]░▒▓█▓▒░░▒▓██████▓▒░░▒▓███████▓▒░       ░▒▓███████▓▒░░▒▓█▓▒░░▒▓███████▓▒░▒▓███████▓▒░▒▓████████▓▒░▒▓████████▓▒░▒▓████████▓▒░  
+░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░      ░▒▓█▓▒░         ░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░      ░▒▓█▓▒░         ░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓█▓▒░▒▓████████▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓███████▓▒░░▒▓█▓▒░░▒▓██████▓▒░░▒▓██████▓▒░░▒▓██████▓▒░    ░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░     ░▒▓█▓▒░▒▓█▓▒░         ░▒▓█▓▒░      ░▒▓█▓▒░     
+░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░      ░▒▓███████▓▒░░▒▓█▓▒░▒▓███████▓▒░▒▓███████▓▒░░▒▓████████▓▒░  ░▒▓█▓▒░      ░▒▓█▓▒░]     
+
+</template>
+
+<template id='contact'>
+ ✉️ bisscuitt@gmail.com
+ 🔗 https://tekuiti.co.uk/
+ 🤝 https://linkedin.com/in/bisscuitt
+</template>
+
+<template id='help'>
+Available Commands:
+
+ 🐈 [[;green;]cat]     - Show me a random cat 
+ 📄 [[;green;]resume]  - Query my Resume / CV 
+ 🖥️ [[;green;]homelab ]- details on my homelab setup 
+ 🧔 [[;green;]whoami]  - A quick summery of myself (not yet implemented) 
+ 🔃 [[;green;]reset]   - Reset the terminal
+ 🛟 [[;green;]help]    - this message 
+</template>
+
+<template id='resume_help'>
+ * summary
+ * details
+ * experience
+ * eduction
+
+ * download [json|html|pdf]
+</template>
+
+<script>
+
+function getCat() {
+    return fetch('https://api.thecatapi.com/v1/images/search')
+        .then(res => res.json()).then(data => data[0].url);
+}
+
+async function generate_cat() {
+    const url = await getCat();
+    console.log('obj: %o', url);
+    const img = $('<img src="' + url + '" width="500">');
+    term.echo(img);
+}
+
+term = $('body').terminal({
+    cat: function() {
+        generate_cat()
+    },
+    reset: function() {
+        location.reload(true);
+    }, 
+    resume: {
+        help: function() {
+            this.echo(resume_help.innerHTML)
+        },
+        download: function(format) {
+            this.echo("Not yet Implemented")
+        }
+    },
+    cv: function() {
+        term.exec('resume', true);
+    },
+    help: function() {
+        this.echo(help.innerHTML)
+    }
+}, {
+    greetings: greetings.innerHTML + contact.innerHTML + '\nWelcome to my terminal. Type \'help\' for more details\n'
+});
+
+term.set_prompt(function(set_prompt) {
+    set_prompt('luser@bisscuitt > ', { typing: true, delay: 200 });
+});
+
+</script>
+
+</body>
+</html>
