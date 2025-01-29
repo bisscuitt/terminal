@@ -1,0 +1,23 @@
+#!/usr/bin/env ruby
+
+#
+# Generate a man page from resume json data
+#
+
+require 'date'
+require 'erb'
+require 'json'
+
+# get the date
+date = DateTime.now()
+
+# load json
+json = File.read('resume.json')
+resume = JSON.parse(json)
+
+# load erb file
+template_data = File.read('man_page.erb')
+template = ERB.new(template_data)
+
+# render the manpage and output to stdout
+puts template.result(binding)

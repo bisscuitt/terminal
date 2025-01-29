@@ -4,7 +4,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery.terminal/js/jquery.terminal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery.terminal/css/jquery.terminal.min.css"/>
-<title>█tekuiti$ > console</title>
+<title>█ tekuiti$ > console</title>
 </head>
 
 <body>
@@ -66,12 +66,14 @@ Available Commands:
 </template>
 
 <template id='resume_help'>
- * summary
- * details
- * experience
- * eduction
+ * summary    - Initial Summary and details
+ * experience - Deep dive into my experience
+ * eduction   - Details of my Eduction
 
  * download [json|html|pdf]
+              - Download resume in a specific format
+
+ * exit       - Return to previous menu
 </template>
 
 <script>
@@ -148,7 +150,7 @@ function getAge(dateString) {
     ageString = age.years + yearString + " and " + age.days + dayString + " old.";
   else if ( (age.years == 0) && (age.months > 0) && (age.days == 0) )
     ageString = age.months + monthString;
-  else ageString = "Oops! Could not calculate age!";
+  else ageString = "Oops! Could not calculate uptime!";
 
   return ageString;
 }   
@@ -165,25 +167,31 @@ async function generate_cat() {
     term.echo(img);
 }
 
+function reset(term) {
+    location.reload(true)
+    term.echo("Resetting...")
+}
+
 term = $('body').terminal({
-    '?': function() { this.exec('help', true) },
-    cat: function() {
-        generate_cat()
-    },
+    help: function() { this.echo(help.innerHTML) },
+    '?':  function() { this.exec('help', true) },
+    cv:   function() { term.exec('resume', true) },
+    cat:  function() { generate_cat() },
+    reset: function() { reset(term) }, 
     uptime: function() {
-        var up = getAge('03/18/1983');
-        this.echo("up " + up);
+        var up_str = getAge('03/18/1983');
+        this.echo("up " + up_str + " ...");
     },
-    reset: function() {
-        location.reload(true)
-        this.echo("Resetting...")
-    }, 
     resume: function() {
         this.echo(resume_help.innerHTML)
+        var cv = $.getJSON( "resume.json", function() {
+            console.log( "success" );
+        })
         term.push({ 
-            back: function() { term.pop() },
-            exit: function() { term.pop() },
-            help: function() {
+            back:  function() { term.pop() },
+            exit:  function() { term.pop() },
+            reset: function() { reset(term) }, 
+            help:  function() {
                 this.echo(resume_help.innerHTML)
             },
             download: function(format) {
@@ -202,23 +210,17 @@ term = $('body').terminal({
             },
         },
         {
-            prompt: 'resume@bisscuitt > ',
+            prompt: '[[;red;]ian.bissett@resume$] ',
             name: 'resume',
         });
-    },
-    cv: function() {
-        term.exec('resume', true);
-    },
-    help: function() {
-        this.echo(help.innerHTML)
-    },
+    }
 }, {
-    greetings: greetings.innerHTML + contact.innerHTML + '\nWelcome to [[;green;]@bisscuitt]. Type \'help\' for commands\n',
+    greetings: greetings.innerHTML + contact.innerHTML + '\nWelcome to [[;green;]$tekuiti]. Type \'help\' for commands\n',
     checkArity: false
 });
 
 term.set_prompt(function(set_prompt) {
-    set_prompt('luser@bisscuitt > ', { typing: true, delay: 200 });
+    set_prompt('luser@tekuiti > ', { typing: true, delay: 200 });
 });
 
 </script>

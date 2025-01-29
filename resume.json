@@ -1,0 +1,510 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Ian Bissett",
+    "label": "Full time Geek 🤓💻 Part time Pirate ☠️⛵ Volunteer Firefighter 🔥🚒",
+    "image": "",
+    "email": "bisscuitt@gmail.com",
+    "phone": "+61468956862",
+    "url": "github.com/bisscuitt",
+    "summary": "Skilled and experienced in leading teams to build and scale cloud infrastructure as a Systems, Platform and Site Reliability Engineer.",
+    "location": {
+      "countryCode": "US",
+      "address": "98 Brooklyn Road\nBrooklyn\nNSW 2083\nAustralia"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "bisscuitt",
+        "url": "https://www.linkedin.com/in/bisscuitt/"
+      },
+      {
+        "network": "Twitter",
+        "username": "bisscuitt",
+        "url": "https://twitter.com/bisscuitt"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Fastly",
+      "position": "Staff Site Reliability Engineer",
+      "startDate": "2021-02-28",
+      "endDate": "2024-08-31",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/fastly/",
+      "location": "Sydney, New South Wales, Australia",
+      "summary": ""
+    },
+    {
+      "name": "Burst SMS",
+      "position": "Site Reliability Engineer",
+      "startDate": "2020-11-30",
+      "endDate": "2021-02-28",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/burst-sms/",
+      "location": "Sydney, New South Wales, Australia"
+    },
+    {
+      "name": "Procore Technologies",
+      "position": "Staff Site Reliability Engineer",
+      "startDate": "2019-05-31",
+      "endDate": "2020-10-31",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/procore-technologies/",
+      "location": "Sydney, Australia"
+    },
+    {
+      "name": "BigCommerce",
+      "position": "Staff Site Reliability Engineer",
+      "startDate": "2018-10-31",
+      "endDate": "2019-03-31",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/bigcommerce/",
+      "location": "Sydney, Australia"
+    },
+    {
+      "name": "BigCommerce",
+      "position": "Manager,  Site Reliability Engineering",
+      "startDate": "2017-04-30",
+      "endDate": "2019-03-31",
+      "highlights": [],
+      "summary": "The SRE team at BigCommerce ensures the availability and response time of the BigCommerce Platform.",
+      "url": "https://www.linkedin.com/company/bigcommerce/",
+      "location": "Sydney, Australia"
+    },
+    {
+      "name": "Bigcommerce",
+      "position": "Lead Systems Engineer",
+      "startDate": "2015-07-31",
+      "endDate": "2017-04-30",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/bigcommerce/",
+      "location": "Sydney, Australia"
+    },
+    {
+      "name": "Bigcommerce",
+      "position": "Senior Systems Administrator",
+      "startDate": "2012-07-31",
+      "endDate": "2015-07-31",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/bigcommerce/"
+    },
+    {
+      "name": "Fairfax Media",
+      "position": "Senior Systems Engineer",
+      "startDate": "2011-01-31",
+      "endDate": "2012-07-31",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/fairfax-media/",
+      "location": "Pyrmont, NSW"
+    },
+    {
+      "name": "NSW Department of Education and Training",
+      "position": "Senior Systems Administrator",
+      "startDate": "2011-01-31",
+      "endDate": "2011-01-31",
+      "highlights": [],
+      "summary": "1 Month temporary contract.",
+      "url": "https://www.linkedin.com/company/nsw-department-of-education/",
+      "location": "St Leonards, NSW"
+    },
+    {
+      "name": "Grox",
+      "position": "Systems Administrator",
+      "startDate": "2010-01-31",
+      "endDate": "2010-12-31",
+      "highlights": [],
+      "summary": "Managing, Designing and Developing Physical and Virtual Linux servers and Systems for Grox and it's clients.",
+      "url": "https://www.linkedin.com/company/grox/"
+    },
+    {
+      "name": "Siemens IT Solutions and Services",
+      "position": "Linux / UNIX Server Infrastructure Specialist",
+      "startDate": "2007-12-31",
+      "endDate": "2009-11-30",
+      "highlights": [],
+      "summary": "Most of my work in this role is currently taken up by the iPlayer Backed Delivery systems and includes the following skills:\n\nUNIX and LINUX System Administration, Systems Design, Software Engineering/Development, Systems Engineering, Architecture Engineering, UNIX, LINUX, PERL, MySQL, Apache, NetApps",
+      "url": "https://www.linkedin.com/company/siemens/"
+    },
+    {
+      "name": "Siemens",
+      "position": "Unix Engineer",
+      "startDate": "2006-12-31",
+      "endDate": "2007-12-31",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/siemens/"
+    },
+    {
+      "name": "186k Limited",
+      "position": "IT Engineer",
+      "startDate": "2006-01-31",
+      "endDate": "2006-12-31",
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "name": "KCOM Group PLC",
+      "position": "ISP Engineer",
+      "startDate": "1999-12-31",
+      "endDate": "2006-12-31",
+      "highlights": [],
+      "url": ""
+    },
+    {
+      "name": "Kingston Communications",
+      "position": "Software Engineer",
+      "startDate": "1999-06-30",
+      "endDate": "2005-12-31",
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/kcom/"
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "NSW Rural Fire Service",
+      "position": "Village Firefighter",
+      "startDate": "2015-08-31",
+      "endDate": "",
+      "summary": null,
+      "highlights": [],
+      "url": "https://www.linkedin.com/company/3713"
+    },
+    {
+      "organization": "Sydney Harbour Tall Ships",
+      "position": "Volunteer DeckHand / Pirate",
+      "startDate": "2010-05-31",
+      "endDate": "2014-08-31",
+      "summary": null,
+      "highlights": [],
+      "url": ""
+    }
+  ],
+  "education": [
+    {
+      "institution": "Malet Lambert",
+      "area": "GCSE",
+      "studyType": "GCSE",
+      "startDate": "1992-12-31",
+      "endDate": "1999-12-31",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [{ "title": "BAFTA", "name": "bafta"}],
+  "certificates": [
+    {
+      "name": "Red Hat Certified Engineer (RHCE)",
+      "issuer": "Red Hat",
+      "startDate": "2007-01-31"
+    },
+    {
+      "name": "Incident Command and Incident Management System Level 1",
+      "issuer": "Blackrock 3 Partners, Inc.",
+      "startDate": "2022-08-31"
+    },
+    {
+      "name": "Advanced Firefighter",
+      "issuer": "NSW Rural Fire Service",
+      "startDate": "2024-09-30"
+    }
+  ],
+  "publications": [{"name":"none"}],
+  "skills": [
+    {
+      "name": "Cloud Infrastructure",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Site Reliability Engineering",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Content Distribution Networks",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Cloud Platform (GCP)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Unix",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Deployment Strategies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Crew Coordination",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "System Administration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "RabbitMQ",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Perl",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "GPS Navigation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Problem Solving",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Configuration Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Infrastructure",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Code Review",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Hydraulics",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bash",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Debugging",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Crew Resource Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "System Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "TCP/IP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "PHP",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Crew Supervision",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Analytical Skills",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Incident Investigation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Infrastructure as code (IaC)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Incident Command",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Managing Crews",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Troubleshooting",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Open Source",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Incident Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Rust (Programming Language)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "MySQL",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Linux",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Terraform",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Communication",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Optimization",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Navigation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Root Cause",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Puppet (Software)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Deployment",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Incident Response",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Databases",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Incident Handling",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Wildfire Behaviour",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "High Availability",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "Simon Crook",
+      "reference": "Ian has a natural ability to easily pick up and grasp new technology and core concepts very quickly. This makes him a visionary and someone who will add value and expertise to any IT System and Project. Ian is someone who I would definitely like to work with again."
+    },
+    {
+      "name": "Robert WELLS",
+      "reference": "Ian is one of those rare individuals who combines an excellent, in depth technical knowledge with a pragmatic, customer focused, point of view; able to provide well thought out solution's heavily focused on the customer.\r\n\r\nThis is instead of the more prevalent bloated, overblown solutions mainly intended to act as an advertisement of the designer's brilliance, hang the expense and effort.\r\n\r\nIt has always been a pleasure to work with Ian."
+    },
+    {
+      "name": "Luke  Harrison",
+      "reference": "Ian is the real deal when it comes to putting projects and architectures on the ground. Ian put the hard work involved in landing BBC TV iPLayer architectures that I had drawn up working with the BBC. I can not say how refreshing it is when capable engineers like Ian who RTFM, comprehend and enhance where possible detailed designs & plans. The TV iPlayer project is and will continue be a success due to the combined hard work of just a handful of individuals. A pleasure to work with."
+    },
+    {
+      "name": "Matthew Thompson",
+      "reference": "Ian is one of a small number of engineers who I have worked with who not only excel at the tasks they are presented with but go that stage further to fully understand the intricacies of the solution they're working on. I have really enjoyed working with Ian on the BBC iPlayer project."
+    }
+  ],
+  "projects": [
+    {
+      "name": "High Availability Project",
+      "startDate": "2014-04-30",
+      "summary": null,
+      "url": null,
+      "endDate": "2014-04-30"
+    },
+    {
+      "name": "BBC iPlayer",
+      "startDate": "2006-12-31",
+      "summary": null,
+      "url": "http://www.bbc.co.uk/iplayer",
+      "endDate": "2008-12-31"
+    }
+  ],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}
