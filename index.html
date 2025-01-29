@@ -77,6 +77,7 @@ Available Commands:
 </template>
 
 <script>
+var cv = undefined;
 
 function getAge(dateString) {
   var now = new Date();
@@ -162,9 +163,25 @@ function getCat() {
 
 async function generate_cat() {
     const url = await getCat();
-    console.log('obj: %o', url);
     const img = $('<img src="' + url + '" width="500">');
     term.echo(img);
+}
+
+function getCv() {
+    return fetch('https://raw.githubusercontent.com/bisscuitt/terminal/refs/heads/main/resume.json')
+        .then(res => res.json()).then(data => data);
+}
+
+async function fetchCv() {
+    const cv_dl = await getCv()
+    console.log('CV Data Aquired...');
+    cv = cv_dl;
+}
+
+function resumeSummary(data) {
+    o =  "Name: "  + data['name'] + "\n"
+    o += "Label: " + data['label'] + "\n"
+    return o
 }
 
 function reset(term) {
@@ -173,20 +190,20 @@ function reset(term) {
 }
 
 term = $('body').terminal({
-    help: function() { this.echo(help.innerHTML) },
-    '?':  function() { this.exec('help', true) },
-    cv:   function() { term.exec('resume', true) },
-    cat:  function() { generate_cat() },
+    help: function()  { this.echo(help.innerHTML) },
+    '?':  function()  { this.exec('help', true) },
+    cv:   function()  { term.exec('resume', true) },
+    cat:  function()  { generate_cat() },
     reset: function() { reset(term) }, 
     uptime: function() {
         var up_str = getAge('03/18/1983');
         this.echo("up " + up_str + " ...");
     },
     resume: function() {
+        fetchCv();
+
         this.echo(resume_help.innerHTML)
-        var cv = $.getJSON( "resume.json", function() {
-            console.log( "success" );
-        })
+
         term.push({ 
             back:  function() { term.pop() },
             exit:  function() { term.pop() },
@@ -194,7 +211,11 @@ term = $('body').terminal({
             help:  function() {
                 this.echo(resume_help.innerHTML)
             },
+            summary: function() {
+                term.echo(resumeSummary(cv['basics']))
+            },
             download: function(format) {
+                console.log(cv);
                 if (format === undefined) {
                     this.echo("Please select a format to download")
                     return 0
