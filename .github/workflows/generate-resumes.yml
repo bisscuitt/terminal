@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Remove all groff images
         run: rm -f grohtml-*
+      - name: ls
+        run: ls -la
       - name: Run Generate Script
         run: ./scripts/generate_resumes.sh
       - name: Check new files into the repo
