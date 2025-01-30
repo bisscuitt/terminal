@@ -1,12 +1,16 @@
 #!/usr/bin/env ruby
-
 #
 # Generate a man page from resume json data
-#
+# as defined at https://jsonresume.org/schema
 
 require 'date'
 require 'erb'
 require 'json'
+
+# function to return date as a simple string
+def sdate(date)
+  return Date.parse(date).strftime('%b %Y')
+end
 
 # get the date
 date = DateTime.now()
@@ -15,9 +19,14 @@ date = DateTime.now()
 json = File.read('resume.json')
 resume = JSON.parse(json)
 
+# load additional json file
+json_additional = File.read('resume_additional.json')
+additional = JSON.parse(json_additional)
+
 # load erb file
 template_data = File.read('man_page.erb')
-template = ERB.new(template_data)
+template = ERB.new(template_data, trim_mode: '-')
 
 # render the manpage and output to stdout
 puts template.result(binding)
+

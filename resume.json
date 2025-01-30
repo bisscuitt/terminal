@@ -5,12 +5,12 @@
     "label": "Full time Geek 🤓💻 Part time Pirate ☠️⛵ Volunteer Firefighter 🔥🚒",
     "image": "",
     "email": "bisscuitt@gmail.com",
-    "phone": "+61468956862",
-    "url": "github.com/bisscuitt",
+    "phone": "+61 468 956 862",
+    "url": "https://www.tekuiti.co.uk/",
     "summary": "Skilled and experienced in leading teams to build and scale cloud infrastructure as a Systems, Platform and Site Reliability Engineer.",
     "location": {
-      "countryCode": "US",
-      "address": "98 Brooklyn Road\nBrooklyn\nNSW 2083\nAustralia"
+      "countryCode": "AU",
+      "address": "Brooklyn, NSW 2083, Australia"
     },
     "profiles": [
       {
@@ -19,9 +19,9 @@
         "url": "https://www.linkedin.com/in/bisscuitt/"
       },
       {
-        "network": "Twitter",
+        "network": "github",
         "username": "bisscuitt",
-        "url": "https://twitter.com/bisscuitt"
+        "url": "https://github.com/bisscuitt"
       }
     ]
   },
@@ -31,83 +31,109 @@
       "position": "Staff Site Reliability Engineer",
       "startDate": "2021-02-28",
       "endDate": "2024-08-31",
-      "highlights": [],
       "url": "https://www.linkedin.com/company/fastly/",
       "location": "Sydney, New South Wales, Australia",
-      "summary": ""
+      "summary": "The Foundation Compute Services team at Fastly is a remote team based across the USA and Australia. We managed the compute environments for the Fastly stack from the SOE level, access management to production infrastructure and the management and deployment of IaC via Terraform Enterprise and configuration management via Chef. This involved working closely with engineering teams also working in office and remotely across the globe.",
+      "highlights": [
+        "Worked 100% remotely in a team distributed across Australia, USA the UK and Europe",
+        "Lead team in implementing ticket management and project workflows",
+        "Assisted in the design and implementation of a new Multi Provider DNS utilising OctoDNS, removing single points of failure and reduced overheads and errors with a GitOps management workflow.",
+        "Mentored several team members in systems architecture and other technical an non-technical skills",
+        "Responsible for managing chef server infrastructure",
+        "Re-implemented and re-deployed new chef server infrastructure in AWS with zero effective downtime",
+        "Involved in migration of Chef secrets to Hashicorp vault secrets platform",
+        "Re-implemented and migrated 1000s of Terraform Enterprise projects on new cloud infrastructure",
+        "Deployed new SSH Bastion nodes in AWS and GCP after for datacenter shutdown with tight deadlines",
+        "Managed Server SOE environment for thousands of nodes across many PoPs and cloud environments",
+        "Created, Updated and managed thousands of Chef Cookbooks deployed across the global fleet of nodes",
+        "Participated in compliance checks and evidence gathering to meet PCI, SOX and GDPR requirements."
+      ]
     },
     {
       "name": "Burst SMS",
       "position": "Site Reliability Engineer",
       "startDate": "2020-11-30",
       "endDate": "2021-02-28",
-      "highlights": [],
+      "highlights": [
+        "Re-deployed infrastructure in AWS with terraform",
+        "Evangelised the use of terraform within the engineering teams",
+        "Created a GitOps enabled CI/CD pipeline for both terraform and puppet code deployments",
+        "Architected and documented new environment"
+      ],
       "url": "https://www.linkedin.com/company/burst-sms/",
-      "location": "Sydney, New South Wales, Australia"
+      "location": "Sydney, New South Wales, Australia",
+      "summary": "Short term contract to re-deploy manaully created architecture in AWS using IAC"
     },
     {
       "name": "Procore Technologies",
       "position": "Staff Site Reliability Engineer",
       "startDate": "2019-05-31",
       "endDate": "2020-10-31",
-      "highlights": [],
       "url": "https://www.linkedin.com/company/procore-technologies/",
-      "location": "Sydney, Australia"
+      "location": "Sydney, Australia",
+      "summary": "A SaaS provider for construction project management software. Building the software that builds the world.",
+      "highlights": [
+        "First engineer employed in Australia working with remote teams in the US.",
+        "Assisted in recruitment and hiring of three additional engineers in the Sydney office.",
+        "Architected a fault-tolerant, multi-zone request routing layer to dramatically improve response times of non-us requests using Envoy, Docker, auto-scaling groups and AWS Global Accelerator.",
+        "Managed new and legacy AWS infrastructure with Puppet, Terraform and custom scripts.",
+        "Built an automated debian packaging system using fpm-cookery, circle-ci and an apt repository served from an private S3 repository.",
+        "Successfully updated CDN configuration to enable support of our application in China.",
+        "Updated and optimised Puppet and Terraform repositories.",
+        "Evangelised DevOps, GitOps and Incident Management processes within the Infrastructure department",
+        "Part of follow-the-sun on call rotation and responded to a wide range of incidents.",
+        "Optimisation and remediation of errors caused by issues with EC2 instances and load balancing configurations."
+      ]
     },
     {
       "name": "BigCommerce",
       "position": "Staff Site Reliability Engineer",
       "startDate": "2018-10-31",
       "endDate": "2019-03-31",
-      "highlights": [],
       "url": "https://www.linkedin.com/company/bigcommerce/",
-      "location": "Sydney, Australia"
+      "location": "Sydney, Australia",
+      "summary": "Building on my previous roles, I transitioned to leading a team of nine SREs across Sydney, Austin TX and San Francisco. Worked projects and incidents, built out new infrastructure and services in GCP, as well as running weekly team planning meetings and daily standups with coaching and mentoring team members.",
+      "highlights": [
+        "I worked for many weeks on scaling our frontend search infrastructure: https://www.bigeng.io/elasticsearch-scaling-multitenant/",
+        "A talk I made to the SydPHP Laravel meetup on running our SaaS infrastructure at scale: https://www.bigeng.io/bc-at-scale/"
+      ]
     },
     {
       "name": "BigCommerce",
-      "position": "Manager,  Site Reliability Engineering",
+      "position": "Manager, Site Reliability Engineering",
       "startDate": "2017-04-30",
       "endDate": "2019-03-31",
-      "highlights": [],
-      "summary": "The SRE team at BigCommerce ensures the availability and response time of the BigCommerce Platform.",
       "url": "https://www.linkedin.com/company/bigcommerce/",
-      "location": "Sydney, Australia"
+      "location": "Sydney, Australia",
+      "summary": "Managed a team of nine SREs spread across offices in Sydney, Austin TX and San Francisco that are responsible for the stability, security and response time of the BigCommerce platform. Day to day team management consisted of goal setting, 1on1s, team roadmaps, hiring and staff development. Managed and took part in 24x7 follow the sun on call rotation. ",
+      "highlights": [
+          "Development of a blameless culture, incident management, post-mortem processes and Kanban based workflow management for the SRE team."
+      ]
     },
     {
       "name": "Bigcommerce",
       "position": "Lead Systems Engineer",
-      "startDate": "2015-07-31",
-      "endDate": "2017-04-30",
-      "highlights": [],
-      "url": "https://www.linkedin.com/company/bigcommerce/",
-      "location": "Sydney, Australia"
-    },
-    {
-      "name": "Bigcommerce",
-      "position": "Senior Systems Administrator",
       "startDate": "2012-07-31",
-      "endDate": "2015-07-31",
-      "highlights": [],
-      "url": "https://www.linkedin.com/company/bigcommerce/"
+      "endDate": "2017-04-30",
+      "url": "https://www.linkedin.com/company/bigcommerce/",
+      "location": "Sydney, Australia",
+      "summary": "Day to day administration of frontend and backend infrastructure that powers all BigCommerce’s services.",
+      "highlights": [
+          "Migrated from single host bare metal deployments to a large scale HA environment using bare metal servers and self managed KVM hosts within IBM SoftLayer dramatically improving uptime for our clients and merchants.", 
+          "Automate software deployment process and reduced deployment time from several days down to around 40 minutes."
+      ]
     },
     {
       "name": "Fairfax Media",
       "position": "Senior Systems Engineer",
       "startDate": "2011-01-31",
       "endDate": "2012-07-31",
-      "highlights": [],
       "url": "https://www.linkedin.com/company/fairfax-media/",
-      "location": "Pyrmont, NSW"
-    },
-    {
-      "name": "NSW Department of Education and Training",
-      "position": "Senior Systems Administrator",
-      "startDate": "2011-01-31",
-      "endDate": "2011-01-31",
-      "highlights": [],
-      "summary": "1 Month temporary contract.",
-      "url": "https://www.linkedin.com/company/nsw-department-of-education/",
-      "location": "St Leonards, NSW"
+      "location": "Pyrmont, NSW",
+      "summary": "Fairfax media is Australia’s oldest newspaper company. It also runs and supports various large scale Australian websites including smh.com.au, carsguide.com.au, domain.com.au, theage,com.au, stayz.com.au, rsvp.com.au.", 
+      "highlights": [ 
+          "Worked in a small team managing the availability and deploying new services and projects for all the major websites owned by Fairfax media. Worked in an on call rotation to ensure 24x7 support."
+      ]
     },
     {
       "name": "Grox",
@@ -115,49 +141,41 @@
       "startDate": "2010-01-31",
       "endDate": "2010-12-31",
       "highlights": [],
-      "summary": "Managing, Designing and Developing Physical and Virtual Linux servers and Systems for Grox and it's clients.",
+      "location": "Sydney, Australia",
+      "summary": "Responsible for day to day management of client servers and building out new services and infrastructure based on client’s project requirements. Our major initiatives included a platform to power utbox.com, a SaaS provider that delivers millions of faxes per month and a bespoke project for a remote “virtual real estate office” located in a mall that features touch screen interfaces and remote management capabilities.",
       "url": "https://www.linkedin.com/company/grox/"
     },
     {
       "name": "Siemens IT Solutions and Services",
-      "position": "Linux / UNIX Server Infrastructure Specialist",
-      "startDate": "2007-12-31",
-      "endDate": "2009-11-30",
-      "highlights": [],
-      "summary": "Most of my work in this role is currently taken up by the iPlayer Backed Delivery systems and includes the following skills:\n\nUNIX and LINUX System Administration, Systems Design, Software Engineering/Development, Systems Engineering, Architecture Engineering, UNIX, LINUX, PERL, MySQL, Apache, NetApps",
-      "url": "https://www.linkedin.com/company/siemens/"
-    },
-    {
-      "name": "Siemens",
-      "position": "Unix Engineer",
+      "position": "Linux Server Infrastructure Specialist",
       "startDate": "2006-12-31",
-      "endDate": "2007-12-31",
-      "highlights": [],
-      "url": "https://www.linkedin.com/company/siemens/"
+      "endDate": "2009-11-30",
+      "url": "https://www.linkedin.com/company/siemens/",
+      "location": "Maidenhead, UK",
+      "summary": "Employed full time by Siemens working on the team that manages bbc.co.uk and BBC iPlayer, the Bafta award winning, first of a kind online public streaming media service that provides free Live and VOD to the entire UK population.\n\nMoving from the Operations team to the Systems engineering team gave me the opportunity to work further in the design and implementation of the iPlayer service. This role was based around building out new systems and services based on designs produced in cooperation with the Systems Architecture team and directly with BBC Engineers.\n\nThe operations team manages the reliability, response time and scaling of the servers and infrastructure that power one the UK’s most trafficked news and media site, bbc.co.uk. I assisted in managing day to day operations and participated in the on call process. Used internal tooling to bring new systems and services online, including building out and decommissioning of servers used to power BBC iPlayer and the BBC Radio Streaming service",
+      "highlights": [
+        "In 2008, iPlayer won the BAFTA Award for `Interactive Innovation Service/Platform`"
+      ]
     },
     {
       "name": "186k Limited",
       "position": "IT Engineer",
       "startDate": "2006-01-31",
       "endDate": "2006-12-31",
-      "highlights": [],
-      "url": ""
+      "url": "http://www.186k.co.uk",
+      "location": "Leeds, UK",
+      "summary": "186k's primary business is providing DSL and Dial-Up Internet access directly to end users, resellers and ISP's.\n\nDeveloped new features and integrated new business acquisitions into the existing ISP systems. Highlights of this role included developing a highly available mail platform and automating DSL orders with BT over an XML/RPC Interface.",
+      "highlights": []
     },
     {
       "name": "KCOM Group PLC",
       "position": "ISP Engineer",
       "startDate": "1999-12-31",
-      "endDate": "2006-12-31",
-      "highlights": [],
-      "url": ""
-    },
-    {
-      "name": "Kingston Communications",
-      "position": "Software Engineer",
-      "startDate": "1999-06-30",
       "endDate": "2005-12-31",
       "highlights": [],
-      "url": "https://www.linkedin.com/company/kcom/"
+      "url": "https://www.kcom.com/",
+      "location": "Kingston upon Hull, UK",
+      "summary": "This was my first job straight out of high school. After starting as an apprentice I quickly worked my way through various support teams and settled comfortably in the Systems Administration team. Over the next few years I would work to replace and rebuild every facet of the web hosting, email, authentication and internal management systems."
     }
   ],
   "volunteer": [
@@ -191,25 +209,42 @@
       "courses": []
     }
   ],
-  "awards": [{ "title": "BAFTA", "name": "bafta"}],
+  "awards": [
+    {
+      "name": "🎖️National Emergency Medal",
+      "date": "2022-01-01",
+      "awarder": "Australian Government",
+      "Summary": "Awarded the National Emergency Medal for my involvment in defending life and property during the devastating bushfires during the Black Summer of 2019-2020"
+    }
+  ],
   "certificates": [
     {
       "name": "Red Hat Certified Engineer (RHCE)",
-      "issuer": "Red Hat",
-      "startDate": "2007-01-31"
+      "issuer": "Red Hat, UK",
+      "startDate": "2003-07-03"
     },
     {
       "name": "Incident Command and Incident Management System Level 1",
-      "issuer": "Blackrock 3 Partners, Inc.",
+      "issuer": "Blackrock 3 Partners, Inc., US",
       "startDate": "2022-08-31"
     },
     {
       "name": "Advanced Firefighter",
-      "issuer": "NSW Rural Fire Service",
+      "issuer": "NSW Rural Fire Service, AU",
       "startDate": "2024-09-30"
+    },
+    {
+      "name": "Ethical Hacking and Countermeasures: Hands-On",
+      "issuer": "Learning Tree International, UK",
+      "startDate": "2008-06-27"
+    },
+    {
+      "name": "Certified Akamai Administrator",
+      "issuer": "Akamai University, AU",
+      "startDate": "01-01-2013"
     }
   ],
-  "publications": [{"name":"none"}],
+  "publications": [],
   "skills": [
     {
       "name": "Cloud Infrastructure",

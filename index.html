@@ -220,13 +220,14 @@ term = $('body').terminal({
                     this.echo("Please select a format to download")
                     return 0
                 }
-                switch (format) {
-                    case 'json':
-                        this.echo("JSON download here:")
-                        window.open("resume.json");
-                        break
-                    default:
-                        this.echo("Unknown format: '" + format + "'.")
+                if (["json","html","pdf","man"].includes(format)) {
+                    url = window.location.href 
+                    target = url.substring(0, url.lastIndexOf('/'));
+                    target += "/resume." + format
+                    this.echo('🔗 ' + target)
+                    window.open(target);
+                } else {
+                    this.echo("Unknown format: '" + format + "'.")
                 }
             },
         },

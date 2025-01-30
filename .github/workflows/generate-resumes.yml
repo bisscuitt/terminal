@@ -1,0 +1,20 @@
+name: Generate Resumes
+run-name: ${{ github.actor }} is generating resumes from json
+on: [push]
+jobs:
+  Generate-Resumes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Remove all groff images
+        run: rm -f grohtml-*
+      - name: Run Generate Script
+        run: ./scripts/generate_resumes.sh
+      - name: Check new files into the repo
+        run: |
+          GIT_STATUS=$(git status --porcelain)
+          echo $GIT_STATUS
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add resume.man resume.pdf resume.html grohtml-*
+          if [ "$GIT_STATUS" != "" ]; then git commit -m "Automated commit"; fi
+          if [ "$GIT_STATUS" != "" ]; then git push; fi
