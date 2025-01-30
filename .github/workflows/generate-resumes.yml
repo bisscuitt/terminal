@@ -4,6 +4,9 @@ on: [push]
 jobs:
   Generate-Resumes:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./
     steps:
       - name: Remove all groff images
         run: rm -f grohtml-*
